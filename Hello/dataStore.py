@@ -29,5 +29,5 @@ def update(data, id=None):
 
 
 
-create = update
+
 
