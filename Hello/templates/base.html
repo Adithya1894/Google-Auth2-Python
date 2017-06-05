@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    </head>
+  <body>
+    <div >
+      
+        
+        <p>
+        {% if session.profile %}
+          <a href="/logout">
+            {{session.profile.name}}
+          </a>
+        {% else %}
+          <a href="/oauth2authorize">Login</a>
+        {% endif %}
+        </p>
+      
+    </div>
+    <div >
+      
+		<p>Add user</p>
+
+<form method="POST" enctype="multipart/form-data"> 
+  <button type="submit" class="btn btn-success">Save User</button>
+</form>
+
+
+    </div>
+  </body>
+</html>
